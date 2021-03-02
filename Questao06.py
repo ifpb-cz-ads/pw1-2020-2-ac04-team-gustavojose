@@ -1,8 +1,8 @@
 
-inicio = int(input("Informe o inicio da tabuada: "))
+inicio = int(input("Informe o início da tabuada: "))
 fim = int(input("Informe o fim agora: "))
 while fim < inicio:
-  fim = int(input("Informe o fim agora (tem que ser maior do que o inicio): "))
+  fim = int(input("Informe o fim agora (tem que ser maior do que o início): "))
 
 n = int(input("Tabuada de: "))
 x = inicio
