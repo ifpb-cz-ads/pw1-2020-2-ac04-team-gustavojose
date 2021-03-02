@@ -1,13 +1,13 @@
-deposito = float(input("Informe o valor inicial: "))
-juros = float(input("Informe a taxa de juros da poupança: "))
-valor_mensal = float(input("Informe o valor mensal: "))
-total_juros=0
 
-for x in range(1,13):
-    deposito+=deposito * juros/100
-    total_juros+=deposito * juros/100
-    print(f'Poupança no {x} mês = {deposito:.2f}')
-    deposito_mensal = float(input("Informe o deposito deste mes: "))
-    deposito+=deposito_mensal
+divida = float(input("Informe o valor da dívida: "))
+juroMensal = float(input("Informe o valor do juro mensal: "))
+parcela = float(input("Informe o valor a ser pago a cada mês: "))
+meses = 0
 
-print(f'O total de ganhos foi de: {total_juros:.2f}')
+while divida > 0:
+  divida -= parcela
+  divida += divida * juroMensal / 100
+  meses += 1
+  print(f"{divida:.2f}")
+
+print(f"O valor de meses para quitar a dívida foi de {meses}.")
